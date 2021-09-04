@@ -5,7 +5,10 @@ Install dnsmasq
 `pacman -S dnsmasq`  
 
 Stop dnsmasq from running to make changes  
-`sudo systemctl stop dnsmasq`  
+`systemctl stop dnsmasq`  
+
+Start dnsmasq on boot  
+`systemctl enable dnsmasq`  
 
 Make a backup of the original dnsmasq conf  
  `cp /etc/dnsmasq.conf /etc/dnsmasq.conf.bak`   
