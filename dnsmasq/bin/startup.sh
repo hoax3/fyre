@@ -9,7 +9,7 @@ then
     echo "$(date +"%b %d,%Y%l:%M:%S%P"), $SERVICE is active"
 else
     echo "$(date +"%b %d,%Y%l:%M:%S%P"), $SERVICE is inactive, starting service."
-    systemctl daemon-reload && systemctl start dnsmasq
+    systemctl daemon-reload && systemctl start dnsmasq || echo "$(date +"%b %d,%Y%l:%M:%S%P"), something went wrong."
 fi
 
 
