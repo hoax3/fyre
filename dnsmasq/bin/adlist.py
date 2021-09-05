@@ -12,7 +12,7 @@ def multi_list():
     for ad in adlist:
         r=requests.get(ad)
         status = r.status_code
-        if status==404:
+        if status!=200:
             print("[%s] : Unable to pull from %s" % (status,ad))
         else:
             with open("00-initial.txt","wb") as f:
