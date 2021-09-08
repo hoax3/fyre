@@ -1,0 +1,5 @@
+# Adlist Out.log
+2021-09-07 14:10:18,139  INFO  Starting Adlist Check
+2021-09-07 14:10:18,139  INFO  Additional lists added. Starting collection...
+2021-09-07 14:10:18,279  INFO  Successfully collected: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+2021-09-07 14:10:21,286  ERROR  Unable to collect: https://10.10.10.10/nothere:  HTTPSConnectionPool(host='10.10.10.10', port=443): Max retries exceeded with url: /nothere (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x10b60a2b0>, 'Connection to 10.10.10.10 timed out. (connect timeout=3)'))
