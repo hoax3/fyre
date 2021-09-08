@@ -8,7 +8,7 @@ import requests
 import logging
 
 logging.basicConfig(
-        filename="/Users/justin/fyre-main/dnsmasq/log/adlistout.log", 
+        filename="/opt/fyre/dnsmasq/log/adlistout.log", 
         format="%(asctime)s  %(levelname)s  %(message)s",
         level=logging.INFO)
 
