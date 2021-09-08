@@ -26,7 +26,7 @@ no-poll
 server=8.8.8.8
 server=8.8.4.4
 local=/fyre.local/
-listen-address=::1,127.0.0.1,192.168.1.10
+listen-address=::1,127.0.0.1,192.168.1.2
 expand-hosts
 domain=fyre.local
 no-resolv
@@ -35,7 +35,8 @@ log-facility=/opt/fyre/dnsmasq/log/dnsmasq.log # log output
 conf-dir=/opt/fyre/dnsmasq/lib/
 
 # DHCP
-dhcp-range=192.168.1.50,192.168.1.200,12h
+bind-interfaces
+dhcp-range=192.168.0.100,192.168.5.200,255.255.0.0,12h
 dhcp-option=option:router,192.168.1.1
 dhcp-authoritative
 dhcp-leasefile=/opt/fyre/dnsmasq/log/dhcp-leases.log
